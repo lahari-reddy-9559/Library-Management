@@ -23,7 +23,7 @@ export default function Login(){
         const loginData = { email, password};
         try {
             const response=await axios.post(
-                    "http://localhost:5000/api/login",
+                    "https://library-api.vercel.app/api/login",
                     loginData,
                 );
                 localStorage.setItem("token",response.data.token);

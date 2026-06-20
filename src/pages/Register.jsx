@@ -50,7 +50,7 @@ const [message, setMessage] = useState({ text: '', color: '' });
         const userData = { fullName, email, password };
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/register",
+                "https://library-api.vercel.app/api/register",
                 userData
             );
             alert(response.data.message);

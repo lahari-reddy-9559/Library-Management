@@ -5,7 +5,7 @@ export default function IssueBooks() {
     const [issues, setIssues] = useState([]);
     const [formData, setFormData] = useState({ bookId: '', studentName: '', studentId: '' });
     
-    const BACKEND_URL = 'http://localhost:5000'; 
+    const BACKEND_URL = 'https://library-api.vercel.app'; 
 
     useEffect(() => {
         fetchBooks();

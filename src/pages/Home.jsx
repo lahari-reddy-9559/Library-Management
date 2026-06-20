@@ -8,7 +8,7 @@ export default function Home() {
         issuedBooks: 0,
         pendingBooks: 0
     });
-    const BACKEND_URL = 'http://localhost:5000'; 
+    const BACKEND_URL = 'https://library-api.vercel.app'; 
 
     useEffect(() => {
         const fetchLibraryData = async () => {

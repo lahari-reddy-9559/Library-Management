@@ -6,7 +6,7 @@ export default function BookList() {
     const [editingId, setEditingId] = useState(null);
     const [editForm, setEditForm] = useState({ title: '', author: '', isbn: '', totalCopies: '' });
     
-    const BACKEND_URL = 'http://localhost:5000'; 
+    const BACKEND_URL = 'https://library-api.vercel.app'; 
     
     useEffect(() => {
         fetchBooks();
